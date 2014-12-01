@@ -13,7 +13,7 @@ before_install:
     - mkdir $HOME/base_vat_ar
     - tar -xf /tmp/base_vat_ar.tgz -C $HOME/base_vat_ar --strip=1
 install:
-    - wget http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-latest.tar.gz -O /tmp/openerp-7.0.tgz
+    - wget http://nightly.openerp.com/7.0/nightly/src/openerp_7.0-latest.tar.gz -O /tmp/openerp-7.0.tgz
     - mkdir $HOME/openerp-7.0
     - tar -xf /tmp/openerp-7.0.tgz -C $HOME/openerp-7.0 --strip=1
     - ln -s $HOME/base_vat_ar $HOME/openerp-7.0/openerp/addons/base_vat_ar
